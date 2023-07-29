@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="../js/analysis.js" type="module"></script>
+  <script src="../js/business.js"></script>
+  <link rel="stylesheet" href="../css/analysis.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="css/analysis.css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.27.2/dist/apexcharts.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <title>Business</title>
+</head>
+<body>
+  
+
+
+ 
+
+    <header class="header-container">
+    <section class="head-analysis">
+      
+      <div class="container-analysis flex1">
+        <div class="left-ana">
+          <div class="logo-ana">
+            <img src="../images/logo/main-min.png" alt="" style="filter: brightness(0) invert(1);">
+          </div>
+
+          <div>
+            <div class="search-ana flex-ana">
+            <i class="fas fa-search"></i>
+            <input type="text" name="" value="" placeholder="Search...">
+            </div>
+            <div class="select">
+            <select>
+              <option value="">Mage Menu</option>
+              <option value="">Mage Menu</option>
+            </select>
+            </div>
+         </div>
+         
+        </div>
+
+        <div class="right-ana flex-ana">
+          <div class="img-ana">
+            <img src="https://img.icons8.com/color/48/000000/usa.png" />
+          </div> 
+          
+          <span class="material-icons">
+            grid_view
+          </span>
+
+          <span class="material-icons">
+           crop_free
+          </span>
+
+          <span class="material-icons">
+            notifications
+          </span>
+
+          <div class="admin-ana flex-ana">
+            <img src="../images/business/analysis/img1.jpg" alt="">
+            <div class="text-ana flex-ana">
+              <label>admin</label>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+
+          <span class="material-icons">
+              settings
+          </span>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="menu-ana">
+      <div class="container-analysis">
+        <div class="navbar">
+          <nav>
+            <ul id="menuitem">
+              <li>
+                <a href="#">
+                  <span class="material-icons">
+                    home
+                  </span>
+                  <h5>Dashboard</h5>
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="product.html">
+                  <span class="material-icons">
+                    drag_indicator
+                  </span>
+                  <h5>UI Element</h5>
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="index.html">
+                  <span class="material-icons">
+                    widgets
+                  </span>
+                  <h5>Apps</h5>
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="contact.html">
+                  <span class="material-icons">
+                    folder_copy
+                  </span>
+                  <h5>Components</h5>
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="account.html">
+                  <span class="material-icons">
+                    file_copy
+                  </span>
+                  <h5>Extra Pages</h5>
+                    <i class="fas fa-chevron-down"></i>
+
+                </a>
+                                </li>
+            </ul>
+          </nav>  
+          <label for="fa fa-bars" onclick="menutoggle()"></label>
+        </div>
+      </div>
+    </section>
+  </header>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var menuitem = document.getElementById("menuitem");
+      if (menuitem == null) {
+        console.error("Element with id 'menuitem' not found.");
+        return;
+      }
+  
+      menuitem.style.maxHeight = "0px";
+  
+      function menutoggle() {
+        if (menuitem.style.maxHeight == "0rem") {
+          menuitem.style.maxHeight = "39vh";
+        } else {
+          menuitem.style.maxHeight = "0px";
+        }
+      }
+  
+      window.addEventListener("scroll", function() {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 50);
+      });
+    });
+  </script>
+ <section class="wrapper-ana">
+  <div class="container-ana">
+    <div class="heading flex1">
+      <h3>DASHBOARD</h3>
+      <p> Dashboard / Dashboard</p>
+    </div>
+    <div class="content-ana column-flex flex-ana">
+      <div class="content_left">
+        <div class="top-ana">
+          <div class="welcome flex1">
+            <div class="text-ana">
+              <h3 >Welcome Back !</h3>
+              <label > Skote Dashboard</label>
+            </div>
+            <div class="img-ana">
+              <img src="../images/business/analysis/img2.png" >
+            </div>
+          </div>
+          <div class="profile flex1">
+            <div class="box">
+              <div class="image">
+                <img src="../images/business/analysis/img1.jpg" >
+              </div>
+              <div class="text-ana">
+                <p>Herny Price</p>
+                <label>sales manager</label>
+              </div>
+            </div>
+
+            <div class="box">
+              <p>125</p>
+              <label >Project</label><br>
+              <button>
+                View profile
+                <i class="fas fa-chevron-down"></i>
+
+              </button>
+            </div>
+
+
+            <div class="box">
+              <p>$1248</p>
+              <label> Revenue</label>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="earning">
+          <div class="column-flex-1 flex1">
+            <div class="box">
+              <h3>Monthly Earning</h3>
+              <label>This Month</label>
+              <h2>$34,000</h2>
+              <p><span>12% 	&uarr; <i class="fas fa-long-arrow-up0"></i></span> From previous period</p>
+              <button>
+                View More
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+
+            <div class="chart box">
+              <div>
+                <div id="chart"></div>
+              </div>
+            </div>
+        </div>
+        <p>We craft digital, graphic and dimensional thinking.</p>
+      </div>
+    </div>
+    <div class="content-right-1">
+    <div class="content_right">
+      <div class="right_top grid">
+        <div class="rbox flex1">
+          <div class="text-ana">
+            <h4> Order</h4>
+            <h2>1,235</h2>
+          </div>
+          <div class="icon">
+            <span class="material-icons">
+              folder_copy
+            </span>
+          </div>
+        </div>
+        <div class="rbox flex1">
+          <div class="text-ana">
+            <h4>Order</h4>
+            <h2>1,235</h2>
+          </div>
+
+          <div class="icon">
+            <span class="material-icons">
+              file_download
+            </span>
+          </div>
+        </div>
+        <div class="rbox flex1">
+          <div class="text-ana">
+            <h4>Order</h4>
+            <h2>1,235</h2>
+          </div>
+       
+          <div class="icon">
+            <span class="material-icons">
+              sell
+            </span>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    <div class="bar">
+      <di3v class="heading flex1">
+        <h5>
+          Email Sent
+        </h5>
+        <div class="date flex1">
+          <h4>Week</h4>
+          <h4>Month</h4>
+          <button>Year</button>
+        </div>
+      </di3v>
+
+      <div id="bars"></div>
+    </div>
+  </div>
+ </section>
+
+
+  <section class="wrapper-ana">
+    <div class="container-ana grid">
+      <div class="box-ana">
+        <h3>Social Source</h3>
+        <div class="icon">
+          <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png" />
+        </div>
+        <div class="text-ana">
+          <h4>Facebook - <span>125 sales</span></h4>
+         <div class="para-ana">
+
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+             Adipisci quas nesciunt ullam consequuntur.
+           </p>
+         </div>
+          <a href="#">Learn More
+
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+
+        <div class="social_icon flex1">
+          <div class="sicon">
+          <i class="fab fa-facebook"></i>
+          <h4>Facebook</h4>
+          <span>125 Sale</span>
+
+          </div>
+          <div class="sicon">
+            <i class="fab fa-twitter"></i>
+            <h4>Twitter</h4>
+            <span>205 Sale</span>
+          </div>
+          <div class="sicon">
+            <i class="fab fa-instagram"></i>
+            <h4>Instagram</h4>
+            <span>205 Sale</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="box-ana">
+        <h3>Activity</h3>
+        <div class="content-ana">
+
+         <div class="abox flex1">
+          <i class="far fa-arrow-alt-circle-right"></i>
+          <label>22 Nov</label>
+          <span class="fas fa-long-arrow-alt-right"></span>
+          <p>Responded to need "Volunteer Activities"</p>
+
+         </div>
+         <div class="abox flex1">
+          <i class="far fa-arrow-alt-circle-right"></i>
+          <label>17 Nov</label>
+          <span class="fas fa-long-arrow-alt-right"></span>
+          <p>Everyone realize why a new common language would be desirable...</p>
+
+         </div>
+      
+      
+      <div class="abox flex1">
+        <i class="far fa-arrow-alt-circle-right"> </i>
+        <label>15 Now</label>
+        <span class="fas fa-long-arrow-alt-right"></span>
+        <p>Joined the group "Boardsmanship Forum"</p>
+
+      </div>
+      <div class="abox flex1">
+        <i class="far fa-arrow-alt-circle-right">  
+        </i>
+        <label >18 Nov</label>
+        <span class="fas fa-long-arrow-alt-right"></span>
+        <p>Responded to need "In-Kind Opportunity</p>
+      </div>
+      <button>
+        View profile
+        <i class="fas fa-long-arrow-alt-right"></i>
+      </button>
+    </div>
+    </div>
+    <div class="box-ana location">
+      <div class="text-ana">
+        <h3>Top Cities Selling Product </h3>
+        
+      <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/889AEE/external-location-map-pin-flatart-icons-outline-flatarticons-10.png" />
+      <h2>1,435</h2>
+      <span>San Francisco</span>
+      </div>
+      <div id="loac">
+
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="table">
+    <div class="container-ana">
+      <h3>Lastest Transaction</h3>
+   
+    <table >
+      <thead>
+        <tr>
+          <th>
+            <input type="checkbox">
+          </th>
+          <th>Order Id</th>
+          <th>Billing Name</th>
+          <th>Date</th>
+          <th>Total</th>
+          <th>payment Status</th>
+          <th>Payment Method</th>
+          <th>View Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>#SK2548</td>
+          <td>Meal Matthews</td>
+          <td>07 oct,2019</td>
+          <td>$400</td>
+          <td><span class="green">Paid</span></td>
+          <td><i class="fab fa-cc-mastercard"></i>Mastercard
+          </td>
+         <td> <button>View Details</button></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>#SK2548</td>
+          <td>Juan Mitchell</td>
+          <td>07 oct,2019</td>
+          <td>$400</td>
+          <td><span class="red">Chargeback</span></td>
+          <td><i class="fab fa-cc-mastercard"></i>visa
+          </td>
+         <td> <button>View Details</button></td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>#SK2548</td>
+          <td>Jamal Burnett</td>
+          <td>07 oct,2019</td>
+          <td>$400</td>
+          <td><span class="green">Paid</span></td>
+          <td><i class="fab fa-cc-mastercard"></i>Paypal
+          </td>
+         <td> <button>View Details</button></td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>#SK2548</td>
+          <td>Meal Matthews</td>
+          <td>07 oct,2019</td>
+          <td>$400</td>
+          <td><span class="green">Paid</span></td>
+          <td><i class="fab fa-cc-mastercard"></i>Mastercard
+          </td>
+         <td> <button>View Details</button></td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>#SK2548</td>
+          <td>Meal Matthews</td>
+          <td>07 oct,2019</td>
+          <td>$400</td>
+          <td><span class="grey">Refund</span></td>
+          <td><i class="fab fa-cc-mastercard"></i>Visa
+          </td>
+         <td> <button>View Details</button></td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>#SK2548</td>
+          <td>Jamal Burnett</td>
+          <td>07 oct,2019</td>
+          <td>$400</td>
+          <td><span class="green">Paid</span></td>
+          <td><i class="fab fa-cc-mastercard"></i>Paypal
+          </td>
+         <td> <button>View Details</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pagination">
+      <ul>
+        <li "><i class="fas fa-chevron-left"></i></li>
+        <li class="active"><p>1</p></li>
+
+        <li ><p>2</p></li>
+        <li><p>3</p></li>
+        <li><i class="fas fa-chevron-right"></i></li>
+      </ul>
+    </div>
+  </div>
+   
+</section>
+
+<div class="container-ana">
+  <span>2023 &#169;Veggiemania.</span>
+  <span>Design & Develop by om jamnekar khilji</span>
+</div> 
+
+
+<footer class="footer-1">
+
+
+
+  <div class="last">
+    <img src="../images/logo/main-min.png" alt="logo" />
+    <p><a>vaggimaina</a></p>
+    <p><a>viggemania@gmail.com</a></p>
+    <p><a>9943053483</a></p>
+    <p><a>www.viggemania.com</a></p>
+    <div class="social-icon">
+      <a class="icon"><i class="bx bxl-twitter"></i></a>
+      <a class="icon"><i class="bx bxl-facebook-square"></i></a>
+      <a class="icon"><i class="bx bxl-instagram"></i></a>
+      <a class="icon"><i class="bx bxl-youtube"></i></a>
+      <a class="icon"><i class="bx bxl-whatsapp"></i></a>
+    </div>
+  </div>
+  <div class="last">
+    <h4>Services</h4>
+    <p><a>contact and help</a></p>
+    <p><a>maneging your product</a></p>
+    <p><a>products</a></p>
+    <p><a>need help?</a></p>
+  </div>
+  <div class="last">
+    <h4>Your Business</h4>
+    <p><a>create your business</a></p>
+    <p><a>state of bussiness</a></p>
+    <p><a>query related</a></p>
+    <p><a>more</a></p>
+  </div>
+  <div class="last">
+    <h4>vegatables</h4>
+    <p><a>see new products</a></p>
+    <p><a>Replace</a></p>
+    <p><a>your contribution</a></p>
+    <p><a>learn more -></a></p>
+  </div>
+  <div class="last">
+    <h4>address</h4>
+    <p>
+      <a
+        >2 & 3, Corner View, Ashok Chopra Marg, Opposite Bianca Towers,
+        Versova, Andheri West, Mumbai, Maharashtra
+      </a>
+    </p>
+    <p><a>mobile:5643543456</a></p>
+    <p><a>see location</a></p>
+    <p><a>map</a></p>
+  </div>
+  <div class="last">
+    <h4>about</h4>
+    <p><a>om jamnekar(fullstack developer)</a></p>
+    <p><a>993043434</a></p>
+    <p><a>my works-></a></p>
+    <p><a></a></p>
+    <div class="social-icon">
+      <a class="icon"><i class="bx bxl-twitter"></i></a>
+      <a class="icon"><i class="bx bxl-linkedin"></i></a>
+      <a class="icon"><i class="bx bxl-instagram"></i></a>
+
+      <a class="icon"><i class="bx bxl-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+
+</div>
+</section>
+
+<div id="#chart"></div>
+
+
+
+
+

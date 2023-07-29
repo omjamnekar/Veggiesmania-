@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="css/analysis.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/shopping.css" />
+    <link rel="stylesheet" href="../css/shopping2.css" />
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/cards.css">
+   <link rel="stylesheet" href="../js/function/cards/cards.js">
+    <link rel="stylesheet" href="../css/vagan.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navigator">
+        <div id="brand">
+          <img src="../images/logo/main-min.png" alt="" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#veggies">Veggies</a>
+              <div class="more-list">
+                <a>-green leafy</a>
+                <a>-rooted</a>
+                <a>-fruity</a>
+                <a>-allium</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#menu">menu</a>
+              <div class="more-list">
+                <a>-green leafy</a>
+                <a>-rooted</a>
+                <a>-fruity</a>
+                <a>-allium</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="#contact">contact</a>
+              <div class="more-list">
+                <a>-green leafy</a>
+                <a>-rooted</a>
+                <a>-fruity</a>
+                <a>-allium</a>
+              </div>
+            </li>
+            <li><a href="#review">review</a></li>
+            <li id="signup"><a href="#">SignIn</a></li>
+
+            <li id="signup"><a href="#">Signup</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#veggies">Veggies</a></li>
+            <li><a href="#menu">menu</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#review">review</a></li>
+
+            <li id="signup"><a href="#">SignIn</a></li>
+
+            <li id="signup"><a href="#">Signup</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="semi-navigator">
+        <div class="category">
+          <a class="onclickslide" onclick="endclose()">
+            <i class="bx bxs-category"></i>
+            <p>Category</p>
+          </a>
+          <aside class="side-slider">
+            <h3 class="acc">Account</h3>
+
+            <div class="account">
+              <figure>
+                <img
+                  src="../images/customer/sai-maddali-cOUtDKBKD2g-unsplash-min.jpg"
+                />
+                <aside>
+                  <div class="acc-text">
+                    <h3>account user</h3>
+                    <p>customer</p>
+                  </div>
+                  <div>
+                    <i class="bx bxs-objects-horizontal-left"></i>
+                  </div>
+                </aside>
+              </figure>
+            </div>
+            <div class="dashboard ctn">
+              <h4 class="sem-acc"><i class="bx bx-home"></i>Dashboard</h4>
+              <h4 class="sem-acc"><i class="bx bx-wallet-alt"></i>Wallets</h4>
+              <h4 class="sem-acc">
+                <i class="bx bx-notification"></i>Notifiaction
+              </h4>
+              <h4 class="sem-acc">
+                <i class="bx bx-purchase-tag"></i>Purchase
+              </h4>
+              <h4 class="sem-acc">
+                <i class="bx bx-coin bx-rotate-270"></i>coins
+              </h4>
+            </div>
+            <div class="filters">
+              <div class="filter-heading">
+                <i class="bx bx-filter-alt"></i>
+                <h3 class="acc">Filter</h3>
+              </div>
+              <div class="slider-container">
+                <div class="filter-option">
+                  <div class="handler" onclick="popup()">
+                    <h3>filter of veggies:</h3>
+                    <i class="checkoption bx bx-chevron-down"></i>
+                  </div>
+
+                  <aside>
+                    <a>
+                      <p>leafy green</p>
+                      <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider-2"></span>
+                      </label>
+                    </a>
+                    <a>
+                      <p>cruciferous marrow</p>
+                      <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider-2"></span>
+                      </label>
+                    </a>
+                    <a>
+                      <p>Roots</p>
+                      <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider-2"></span>
+                      </label>
+                    </a>
+                    <a>
+                      <p>Edible plants</p>
+                      <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider-2"></span>
+                      </label>
+                    </a>
+                    <a>
+                      <p>Allium</p>
+                      <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider-2"></span>
+                      </label>
+                    </a>
+                    <a>
+                      <p>Allium</p>
+                      <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider-2"></span>
+                      </label>
+                    </a>
+                    <a>
+                      <p>Beet</p>
+                      <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider-2"></span>
+                      </label>
+                    </a>
+                    <a>
+                      <p>Bulbs</p>
+                      <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider-2"></span>
+                      </label>
+                    </a>
+                    <a>
+                      <p>Select All</p>
+                      <label class="switch">
+                        <input
+                          type="checkbox"
+                          class="btn-select"
+                          onclick="selectall()"
+                        />
+                        <span class="slider"></span>
+                      </label>
+                    </a>
+                    <div class="btn-container">
+                      <button class="okButon">selected</button>
+                      <button class="okButon" type="reset">cancel</button>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+
+              <div class="slider-container">
+                <div class="veggies-option">
+                  <div class="handler" onclick="popup1()">
+                    <h3>For child</h3>
+                    <i class="checkoption bx bx-chevron-down"></i>
+                  </div>
+
+                  <aside>
+                    <div class="veggies-category">
+                      <article>
+                        <a class="head-filter" onclick="veggies1()">
+                          <p>age</p>
+                          <i class="checkoption bx bx-chevron-down"></i>
+                        </a>
+
+                        <aside>
+                          <a>
+                            <p>1-3 years</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>3-5 years</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>5-7 years</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>7-12 years</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>12-14 years</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>14-16 years</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                        </aside>
+                      </article>
+                      <article class="artical2">
+                        <a class="head-filter" onclick="veggies2()">
+                          <p>height</p>
+                          <i class="checkoption bx bx-chevron-down"></i>
+                        </a>
+
+                        <aside>
+                          <a>
+                            <p>0.5ft-1ft</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+
+                          <a>
+                            <p>1ft-2ft</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+
+                          <a>
+                            <p>2ft-3ft</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>3ft-4ft</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>4ft-5ft</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>5ft-6ft</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                        </aside>
+                      </article>
+                      <article class="meals-component">
+                        <a class="head-filter" onclick="meals()"
+                          ><p>meal's components</p>
+                          <i class="checkoption bx bx-chevron-down"></i>
+                        </a>
+
+                        <aside>
+                          <a>
+                            <p>Nutrition</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Nutrient-dense</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Protein</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Carbohydrates</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Healthy fat</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Calcium</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Iron</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Folato</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+
+                          <a>
+                            <p>Fibers</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+
+                          <a>
+                            <p>vitamins</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+
+                          <a>
+                            <p>Select All</p>
+                            <label class="switch">
+                              <input type="checkbox" onclick="selectall1()" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                        </aside>
+                      </article>
+                    </div>
+                    <div class="btn-container">
+                      <button class="okButon">selected</button>
+                      <button class="okButon" type="reset">cancel</button>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+              <div class="slider-container">
+                <div class="pregnancy-option">
+                  <div class="handler" onclick="popup3()">
+                    <h3>Pregnancy</h3>
+                    <i class="checkoption bx bx-chevron-down"></i>
+                  </div>
+
+                  <aside>
+                    <div class="pregnancy-category">
+                      <article>
+                        <a class="head-filter" onclick="veggies3()">
+                          <p>Months</p>
+                          <i class="checkoption bx bx-chevron-down"></i>
+                        </a>
+
+                        <aside>
+                          <a>
+                            <p>0-10week</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>10-15week</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>15-20week</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>20-25week</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>25-30week</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>30-35week</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>35-40week</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>40-45week</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                        </aside>
+                      </article>
+                      <article class="artical4">
+                        <a class="head-filter" onclick="pragi()">
+                          <p>Pregnancy Problem</p>
+                          <i class="checkoption bx bx-chevron-down"></i>
+                        </a>
+
+                        <aside>
+                          <a>
+                            <p>Intrauterine Pregnancy</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Molar Pregnancy</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Ectopic or Tubal Pregnancy</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Intra-Abdominal Pregnancy</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Singlet Pregnancy</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Multiple Pregnancy</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>High-Risk Pregnancy</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Lupus Pregnancy</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Chemical Pregnancy</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                        </aside>
+                      </article>
+                      <article class="meals-component1">
+                        <a class="head-filter" onclick="meals1()"
+                          ><p>meal's components</p>
+                          <i class="checkoption bx bx-chevron-down"></i>
+                        </a>
+
+                        <aside>
+                          <a>
+                            <p>Nutrition</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Nutrient-dense</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Protein</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Carbohydrates</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Healthy fat</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Calcium</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Iron</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Folato</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+
+                          <a>
+                            <p>Fibers</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+
+                          <a>
+                            <p>vitamins</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+
+                          <a>
+                            <p>Iron</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>DHA</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Calcium</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                        </aside>
+                      </article>
+                    </div>
+                    <div class="btn-container">
+                      <button class="okButon">selected</button>
+                      <button class="okButon" type="reset">cancel</button>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+
+              <div class="slider-container">
+                <div class="diet-option">
+                  <div class="handler" onclick="diet1()">
+                    <h3>Diet</h3>
+                    <i class="checkoption bx bx-chevron-down"></i>
+                  </div>
+
+                  <aside>
+                    <div class="diet-category">
+                      <article>
+                        <a class="head-filter" onclick="veggies4()">
+                          <p>Body Weight</p>
+                          <i class="checkoption bx bx-chevron-down"></i>
+                        </a>
+
+                        <aside>
+                          <a>
+                            <p>20kg - 30kg</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>30kg - 40kg</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>40kg - 50kg</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>50kg - 60kg</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>60kg - 70kg</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>70kg - 80kg</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>80kg - 90kg</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>90kg - 100kg</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+
+                          <a>
+                            <p>100kg - 110kg</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>110kg - 120kg</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>120kg - 130kg</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                        </aside>
+                      </article>
+                      <article class="artical4">
+                        <a class="head-filter" onclick="types()">
+                          <p>Diect type</p>
+                          <i class="checkoption bx bx-chevron-down"></i>
+                        </a>
+
+                        <aside class="top">
+                          <a>
+                            <p>Intermittent Fasting</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Mediterranean Diet</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Ketogenic Diet</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Veganism</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Carnivore Diet</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Paleo Diet</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Dessert &Breakfast Diet</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Sirtfood Diet</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a> </a>
+                        </aside>
+                      </article>
+                      <article class="meals-component2">
+                        <a class="head-filter" onclick="miniral()"
+                          ><p>meal's components</p>
+                          <i class="checkoption bx bx-chevron-down"></i>
+                        </a>
+
+                        <aside>
+                          <a>
+                            <p>Nutrition</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Nutrient-dense</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Protein</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Carbohydrates</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Healthy fat</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Calcium</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Iron</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Folato</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+
+                          <a>
+                            <p>Fibers</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+
+                          <a>
+                            <p>vitamins</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+
+                          <a>
+                            <p>Iron</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>DHA</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                          <a>
+                            <p>Calcium</p>
+                            <label class="switch">
+                              <input type="checkbox" />
+                              <span class="slider-2"></span>
+                            </label>
+                          </a>
+                        </aside>
+                      </article>
+                    </div>
+                    <div class="btn-container">
+                      <button class="okButon">selected</button>
+                      <button class="okButon" type="reset">cancel</button>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard ctn">
+            <h3 class="acc icon-dash"><i class="bx bxs-business" ></i>Business</h3>
+              <a href=""> <h4 class="sem-acc"><i class="bx bx-money"></i>Your Business</h4></a>
+              <a href="explore.html"> <h4 class="sem-acc"><i class='bx bx-extension' ></i></i>Explore</h4></a>
+              <a href="newBusiness.html"> <h4 class="sem-acc" ><i class="bx bx-star "></i>New Business</h4></a>
+              <a href="business.html"><h4 class="sem-acc"><i class='bx bxl-graphql' ></i>Analysis</h4></a>
+            </div>
+            <div class="dashboard ctn">
+              <h3 class="sem-acc"><i class='bx bx-history' style='color:#dadada' ></i>History</h3>
+              <h3 class="sem-acc">&#8592; Logout</h3>
+
+              <!-- <h4 class="sem-acc">
+                <i class="bx bx-notification"></i>Notifiaction
+              </h4>
+              <h4 class="sem-acc">
+                <i class="bx bx-purchase-tag"></i>Purchase
+              </h4>
+              <h4 class="sem-acc">
+                <i class="bx bx-coin bx-rotate-270"></i>coins
+              </h4> -->
+            </div>
+          </aside>
+        </div>
+
+        <div class="option">
+          <a><p>Brands</p></a>
+          <a><p>News</p></a>
+          <a><i class="bx bxs-cart"></i></a>
+          <a><i class="bx bxs-heart"></i></a>
+
+          <form>
+            <input type="search" placeholder="Search" />
+            <button type="submit"><i class="bx bx-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <style>
+      header.active {
+        display: none;
+      }
+      .controller .front_veggies{
+  display: block;
+  transition: all 0.6s;
+ }
+ 
+ 
+ .controller.analysis .front_veggies{
+     display: none;
+     transition: all 0.6s;
+    }
+
+    .controller.newBusiness .front_veggies{
+     display: none;
+     transition: all 0.6s;
+    }
+
+ 
+ .controller .business{
+     display:none;
+     transition: all 0.6s;
+ }
+ 
+ .controller.analysis .business{
+     display: block;
+     transition: all 0.6s;
+ }
+
+    </style>
+
+    <article class="main-excess">
+      <div class="controller">
+
+      
+      <div class="front_veggies">
+
+      
+      <section class="hero-container container">
+        <div class="hero-img">
+          <img src="" alt="" />
+        </div>
+        <div class="hero-text">
+          <h1 class="hero-heading">
+            Welcome to the <span>Veggimaina</span> Cart
+          </h1>
+          <h2>Multiple brands and farm product in one roof at low price.</h2>
+        </div>
+      </section>
+      <section class="container back">
+        <div class="btn-container-1">
+          <button type="button" class="btn">Leafy veggies</button>
+          <button type="button" class="btn">Mix-veggies</button>
+          <button type="button" class="btn">Separate packages</button>
+          <button type="button" class="btn">Dry fruits</button>
+          <button type="button" class="btn">Salads</button>
+          <button type="button" class="btn">Green</button>
+          <button type="button" class="btn">Ground-rooted veggies</button>
+        </div>
+      </section>
+     <section class="secondary-container container">
+      <h2 class="secondary-heading">Offer For just Today</h2>
+    
+       
+
+        <article class="htns">
+
+     <div class="slide-show">
+      <div class="slider-container-2">
+        <div class="slider-control left inactive"></div>
+        <div class="slider-control right"></div>
+        <ul class="slider-pagi"></ul>
+        <div class="slider">
+          <div class="slide slide-0 active">
+            <div class="slide__bg"></div>
+            <div class="slide__content">
+              <svg
+                class="slide__overlay"
+                viewBox="0 0 720 405"
+                preserveAspectRatio="xMaxYMax slice"
+              >
+                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+              </svg>
+              <div class="slide__text">
+                
+              
+              </div>
+            </div>
+          </div>
+          <div class="slide slide-1">
+            <div class="slide__bg"></div>
+            <div class="slide__content">
+              <svg
+                class="slide__overlay"
+                viewBox="0 0 720 405"
+                preserveAspectRatio="xMaxYMax slice"
+              >
+                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+              </svg>
+              <div class="slide__text">
+               
+              </div>
+            </div>
+          </div>
+          <div class="slide slide-2">
+            <div class="slide__bg"></div>
+            <div class="slide__content">
+              <svg
+                class="slide__overlay"
+                viewBox="0 0 720 405"
+                preserveAspectRatio="xMaxYMax slice"
+              >
+                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+              </svg>
+              <div class="slide__text"></div>
+            </div>
+          </div>
+          <div class="slide slide-3">
+            <div class="slide__bg"></div>
+            <div class="slide__content">
+              <svg
+                class="slide__overlay"
+                viewBox="0 0 720 405"
+                preserveAspectRatio="xMaxYMax slice"
+              >
+                <path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+              </svg>
+              <div class="slide__text">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     </div>
+       
+      </article>
+     
+     
+     </section>
+
+     <section class="third-container container">
+      <div class="card-heading-more">
+
+        <h2 class="heading-card">Leafy Vaggies</h2>
+        <i class='bx bxs-collection'></i>
+      </div>
+      <div class="wrapper">
+         <div class="buttons">
+           <i id="left" class='left bx bx-chevron-left' ></i>
+           <i id="right"  class='right bx bx-chevron-right'></i>
+         </div>
+        
+        <ul class="carousel">
+        </ul>
+        
+      </div>
+      <div class="card-heading-more">
+
+        <h2 class="heading-card">Grooty Vaggies</h2>
+        <i class='bx bxs-collection'></i>
+      </div>
+     
+      <div class="wrapper_2">
+      
+        <i id="left" class='bx bx-chevron-left' ></i>
+        <ul class="carousel_2">
+          <li class="card_2">
+            <div class="productContainer2"></div>
+          </li>
+          <li class="card_2">
+            <div class="productContainer2"></div>
+          </li>
+          <li class="card_2">
+            <div class="productContainer2"></div>
+          </li>
+          <li class="card_2">
+            <div class="productContainer2"></div>
+          </li>
+          <li class="card_2">
+            <div class="productContainer2"></div>
+          </li>
+
+          <li class="card_2">
+            <div class="productContainer2"></div>
+          </li> 
+           <li class="card_2">
+
+
+            <div class="productContainer2"></div>
+          </li>
+          <li class="card_2">
+            <div class="productContainer2"></div>
+          </li>
+          <li class="card_2">
+            <div class="productContainer2"></div>
+          </li>
+          <li class="card_2">
+            <div class="productContainer2"></div>
+          </li>
+          
+
+        </ul>
+        
+        <i id="right"  class='bx bx-chevron-right'></i>
+      </div>
+      
+      <div class="card-heading-more">
+
+        <h2 class="heading-card">Leafy Vaggies</h2>
+        <i class='bx bxs-collection'></i>
+      </div>
+      
+
+      <div class="grid-of-two">
+
+        <div class="side-small">
+          <div class="wrapper_3">
+      
+            <i id="left" class='bx bx-chevron-left' ></i>
+            <ul class="carousel_3">
+              <li class="card_3">
+                <div class="productContainer3"></div>
+              </li>
+              <li class="card_3">
+                <div class="productContainer3"></div>
+              </li>
+              <li class="card_3">
+                <div class="productContainer3"></div>
+              </li>
+              <li class="card_3">
+                <div class="productContainer3"></div>
+              </li>
+              <li class="card_3">
+                <div class="productContainer3"></div>
+              </li>
+    
+              <li class="card_3">
+                <div class="productContainer3"></div>
+              </li> 
+               <li class="card_3">
+    
+    
+                <div class="productContainer3"></div>
+              </li>
+              <li class="card_3">
+                <div class="productContainer3"></div>
+              </li>
+              <li class="card_3">
+                <div class="productContainer3"></div>
+              </li>
+              <li class="card_3">
+                <div class="productContainer3"></div>
+              </li>
+              
+    
+            </ul>
+            
+            <i id="right"  class='bx bx-chevron-right'></i>
+          </div>
+          
+        </div>
+        <div class="box-container">
+          <div class="main-card-container">
+            <div class="state-card">
+              <ul id="slider" class="scrolling" style="list-style-type: none;padding-left:0;">
+                <li class="card-container"></li>
+                <li class="card-container"></li>
+                <li class="card-container"></li>
+                <li class="card-container"></li>
+                <li class="card-container"></li>
+              </ul>
+            </div>
+            <div class="btn-absolute">
+              <i class="bx slider-btn-1 bx-chevron-left"></i>
+              <i class="bx slider-btn-2 bx-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+     </section>
+   <section class="fourth-container container">
+    <div class="wrapper_4">
+      
+      <i id="left" class='bx bx-chevron-left' ></i>
+      <ul class="carousel_4">
+        <li class="card_4">
+          <div class="productContainer4"></div>
+        </li>
+        <li class="card_4">
+          <div class="productContainer4"></div>
+        </li>
+        <li class="card_4">
+          <div class="productContainer4"></div>
+        </li>
+        <li class="card_4">
+          <div class="productContainer4"></div>
+        </li>
+        <li class="card_2">
+          <div class="productContainer4"></div>
+        </li>
+
+        <li class="card_4">
+          <div class="productContainer4"></div>
+        </li> 
+         <li class="card_4">
+
+
+          <div class="productContainer4"></div>
+        </li>
+        <li class="card_4">
+          <div class="productContainer4"></div>
+        </li>
+        <li class="card_4">
+          <div class="productContainer4"></div>
+        </li>
+        <li class="card_4">
+          <div class="productContainer4"></div>
+        </li>
+        
+
+      </ul>
+      
+      <i id="right"  class='bx bx-chevron-right'></i>
+    </div>
+
+    <div class="wrapper_5">
+      
+      <i id="left" class='bx bx-chevron-left' ></i>
+      <ul class="carousel_5">
+        <li class="card_5">
+          <div class="productContainer5"></div>
+        </li>
+        <li class="card_5">
+          <div class="productContainer5"></div>
+        </li>
+        <li class="card_5">
+          <div class="productContainer5"></div>
+        </li>
+        <li class="card_5">
+          <div class="productContainer5"></div>
+        </li>
+        <li class="card_5">
+          <div class="productContainer5"></div>
+        </li>
+
+        <li class="card_5">
+          <div class="productContainer5"></div>
+        </li> 
+         <li class="card_5">
+
+
+          <div class="productContainer5"></div>
+        </li>
+        <li class="card_5">
+          <div class="productContainer5"></div>
+        </li>
+        <li class="card_5">
+          <div class="productContainer5"></div>
+        </li>
+        <li class="card_5">
+          <div class="productContainer5"></div>
+        </li>
+        
+
+      </ul>
+      
+      <i id="right"  class='bx bx-chevron-right'></i>
+    </div>
+
+    <div class="wrapper_6">
+      
+      <i id="left" class='bx bx-chevron-left' ></i>
+      <ul class="carousel_6">
+        <li class="card_6">
+          <div class="productContainer6"></div>
+        </li>
+        <li class="card_6">
+          <div class="productContainer6"></div>
+        </li>
+        <li class="card_6">
+          <div class="productContainer6"></div>
+        </li>
+        <li class="card_6">
+          <div class="productContainer6"></div>
+        </li>
+        <li class="card_6">
+          <div class="productContainer6"></div>
+        </li>
+
+        <li class="card_6">
+          <div class="productContainer6"></div>
+        </li> 
+         <li class="card_6">
+
+
+          <div class="productContainer6"></div>
+        </li>
+        <li class="card_6">
+          <div class="productContainer6"></div>
+        </li>
+        <li class="card_6">
+          <div class="productContainer6"></div>
+        </li>
+        <li class="card_6">
+          <div class="productContainer6"></div>
+        </li>
+        
+
+      </ul>
+      
+      <i id="right"  class='bx bx-chevron-right'></i>
+    </div>
+   </section>
+
+
+     <section class="fifth-container container">
+      <div class="cereales-container">
+        <div class="str-cer">
+           <div class="img-cer">
+            <img src="../images/menu/radoslav-bali-umfRZ2Hb1OM-unsplash-min.jpg" alt="">
+           </div>
+           <div class="text-cer">
+            <div class="back-cer"><p>New Additional Products</p></div>
+          <p class="pop-line-cer"> "Unleash the Power of Nature with Our Fresh and Flavorful Veggies!"</p>
+          <h3>Elevate Your Nutrition with Our New Addition  Cereals Kingdom!</h3>
+          <h4>Introducing a Paradigm Shift in Health and Nutrition: Our New Cereal Collection!</h4>
+          <div class="separate-cer">
+            <p>
+              Embrace the Morning Ritual: Kickstart your day with our invigorating
+               breakfast cereals. From crispy flakes to hearty granola clusters,
+               our range offers an array of flavors and textures to suit every palate
+            </p>
+            <p>
+              Indulge in Versatility: Our cereals go beyond just breakfast; they are 
+              incredibly versatile and can be incorporated into a myriad of culinary creations
+              .</p>
+              <p>
+
+                Uncompromising Quality: Just like our fresh veggies, we hold our cereal collection to the highest standards of quality. 
+              </p>
+          </div>
+          
+          <ul>
+            <li>Harvest Crunch</li>
+            <li>Nature's Bounty</li>
+            <li>Sunrise Crunch</li>
+            <li>Nutri-Grain Bliss</li>
+            <li>Golden Grain Delight</li>
+            <li>Wholesome Oats</li>
+            <li>Crunchy Flax Blend</li>
+            <li>Honey Nut Power Bites</li>
+            <li>Multigrain Medley</li>
+            <li>Vitality Crunch</li>
+            <li>Chia Chomp</li>
+            <li>Protein Packed Puffs</li>
+            <li>Superfood Spectacle</li>
+            <li>Ancient Grains Galore</li>
+            <li>Fiber-Rich Fusion</li>
+            <li>Berry Burst Breakfast</li>
+            <li>Cinnamon Spice Sensation</li>
+            <li>Quinoa Crunch Delight</li>
+            <li>Maple Almond Bliss</li>
+            <li>Energizing Granola Mix</li>
+        </ul>
+        <img class="side-car" src="../images/sidescroll/png-clipart-cereal-whole-grain-food-health-pulses-food-group-food-eating-PhotoRoom.png-PhotoRoom.png" alt="">
+           </div>
+
+         
+      </div>
+      
+      </div>
+       
+      <div class="wrapper_7">
+      
+        <i id="left" class='bx bx-chevron-left' ></i>
+        <ul class="carousel_7">
+          <li class="card_7">
+            <div class="productContainer7"></div>
+          </li>
+          <li class="card_7">
+            <div class="productContainer7"></div>
+          </li>
+          <li class="card_7">
+            <div class="productContainer7"></div>
+          </li>
+          <li class="card_7">
+            <div class="productContainer7"></div>
+          </li>
+          <li class="card_7">
+            <div class="productContainer7"></div>
+          </li>
+  
+          <li class="card_7">
+            <div class="productContainer7"></div>
+          </li> 
+           <li class="card_7">
+  
+  
+            <div class="productContainer7"></div>
+          </li>
+          <li class="card_7">
+            <div class="productContainer7"></div>
+          </li>
+          <li class="card_7">
+            <div class="productContainer7"></div>
+          </li>
+          <li class="card_7">
+            <div class="productContainer7"></div>
+          </li>
+          
+  
+        </ul>
+        
+        <i id="right"  class='bx bx-chevron-right'></i>
+      </div>
+     
+      <div class="natural-cards"> 
+        <div>
+
+       
+          <div class="card-bene">
+             <div class="icon-bene">
+                <i class='bx bx-leaf'></i>
+              </div>
+              <article class="text-bene">
+                 <h3>Farm-to-Table Freshness:</h3>
+                 <p>Our e-store prides itself on offering farm-fresh vegetables directly sourced from local farmers. We ensure that every veggie is picked at the peak of its freshness, guaranteeing exceptional taste and nutritional value for our customers.</p>
+                 <i>learn more</i>
+              </article>
+          </div>
+          <div class="card-bene">
+            <div class="icon-bene">
+              <i class='bx bx-sun' ></i>
+             </div>
+             <article class="text-bene">
+                <h3>Seasonal Variety:</h3>
+                <p> We celebrate the beauty of each season by providing a wide range of seasonal vegetables. From crisp spring greens to hearty winter root vegetables, our e-store ensures that customers can enjoy the freshest produce that nature has to offer</p>
+                <i>learn more</i>
+             </article>
+         </div>
+         <div class="card-bene">
+          <div class="icon-bene">
+            <i class='bx bx-star' ></i>
+           </div>
+           <article class="text-bene">
+              <h3>Recipe Inspiration:</h3>
+              <p>We go beyond just selling vegetables by providing recipe ideas and inspiration to our customers. Our website features a collection of delicious and nutritious recipes, helping customers explore new culinary possibilities with their fresh veggies.</p>
+              <i>learn more</i>
+           </article>
+       </div>
+      </div>
+      <div>
+
+    
+       <div class="card-bene">
+        <div class="icon-bene">
+          <i class='bx bxs-truck' ></i>
+         </div>
+         <article class="text-bene">
+            <h3>Hassle-Free Delivery</h3>
+            <p> We understand the importance of convenience. With our reliable and efficient delivery service, customers can have their fresh veggies delivered straight to their doorstep. We take care of the logistics, so our customers can focus on enjoying their meals.</p>
+            <i>learn more</i>
+         </article>
+     </div>
+     <div class="card-bene">
+      <div class="icon-bene">
+        <i class='bx bxs-hand'></i>
+       </div>
+       <article class="text-bene">
+          <h3>Locally Sourced: </h3>
+          <p>Supporting local farmers is at the core of our values. By choosing our e-store, customers contribute to the growth of their community and reduce the carbon footprint associated with long-distance transportation. </p>
+          <i>learn more</i>
+       </article>
+   </div>
+  </div>
+         
+      </div>
+
+     
+     </section>
+
+     <section class="sixth-container container">
+      <div class="vagan-section">
+      
+        <div class="veg-text">
+          <div>
+
+            <h2>Vagan Food</h2>
+            <h5 class="subheading-veg">Unleashing the Flavors of Vegan Cuisine</h5>
+            <p>Immerse yourself in a cornucopia of flavors, where fresh, seasonal ingredients take center stage.</p>
+              <p> From mouthwatering mains to heavenly desserts, each recipe is thoughtfully crafted to deliver an explosion of taste while embracing the power of nature's bounty.</p>
+            <button>View now</button>
+            </div>
+          </div>
+        <img src="../images/hero/2-PhotoRoom.png-PhotoRoom.png">
+      </div>
+
+      <div class="vegan-introduction">
+        <h2>Unlock the World of Exquisite Vegan Products</h2>
+
+        <p>Embrace a healthier lifestyle without compromising on taste. Our recipes are meticulously developed to ensure that every bite is a symphony of textures and flavors, making every meal a celebration of wholesome goodness. Whether you're a dedicated vegan, curious flexitarian, or simply seeking to incorporate more plant-based options into your diet, our website is a treasure trove of inspiration.</p>
+      </div>
+
+      <div class="vagan-cards">
+        <div class="card-vagan">
+          <div class="icon">
+            <i class='bx bx-heart' ></i>
+          </div>
+          <div>
+            <h3>Nourish Your Body, Empower Your Health</h3>
+            <p>Experience the transformative power of our vegan food, meticulously crafted to provide your body with essential nutrients, vitamins, and minerals.</p>
+          </div>
+        </div>
+
+        <div class="card-vagan">
+          <div class="icon">
+            <i class='bx bx-leaf' ></i>
+          </div>
+          <div>
+            <h3>Savor the Flavors, Love the Planet</h3>
+            <p>"Indulge in a guilt-free culinary experience while actively contributing to a sustainable future. Our vegan food not only tantalizes your taste buds but also helps reduce your carbon footprint.</p>
+          </div>
+        </div>
+
+        <div class="card-vagan">
+          <div class="icon">
+            <i class='bx bxs-florist' ></i>
+          </div>
+          <div>
+            <h3>Your Inner Glow, Radiate from Within</h3>
+            <p>Discover the beauty-boosting benefits of our vegan food. Packed with antioxidant-rich fruits, vegetables, and whole grains, our offerings promote radiant skin, healthy hair, and a youthful glow.</p>
+          </div>
+        </div>
+
+
+        <div class="card-vagan">
+          <div class="icon">
+            <i class='bx bx-planet' ></i>
+          </div>
+          <div>
+            <h3>Powerful Plant Proteins, Optimal Performance</h3>
+            <p>Unlock your full potential with the strength of plant-based proteins. Our vegan food provides you with a rich array of protein sources, such as legumes, nuts, and seeds, to support muscle growth, aid in post-workout recovery.</p>
+          </div>
+        </div>
+
+        <div class="card-vagan">
+          <div class="icon">
+            <i class='bx bx-injection' ></i>
+          </div>
+          <div>
+            <h3>Guilt-Free Indulgence, Wholesome Delight</h3>
+            <p>Satisfy your cravings with our guilt-free vegan food options. From decadent desserts to savory comfort foods, we've mastered the art of creating delicious treats without compromising on nutrition.</p>
+          </div>
+        </div>
+        
+
+        <div class="card-vagan">
+          <div class="icon">
+            <i class='bx bx-run' ></i>
+          </div>
+          <div>
+            <h3>Gut-Friendly Goodness, Happy Digestion</h3>
+            <p>Experience the digestive bliss that comes with our vegan food. Rich in fiber and free from animal products, our offerings promote a healthy gut microbiome, improve digestion, and support overall gut health. Let your tummy smile with every meal.</p>
+          </div>
+        </div>
+      </div>
+     </section>
+    </div>
+
+   <div class="business"></div>
+   <div class="newBusiness-bus"></div>
+  </div>
+  
+ 
+  
+
+  <footer class="footer-1">
+    <div class="last">
+      <img src="../images/logo/main-min.png" alt="logo" />
+      <p><a>vaggimaina</a></p>
+      <p><a>viggemania@gmail.com</a></p>
+      <p><a>9943053483</a></p>
+      <p><a>www.viggemania.com</a></p>
+      <div class="social-icon">
+        <a class="icon"><i class="bx bxl-twitter"></i></a>
+        <a class="icon"><i class="bx bxl-facebook-square"></i></a>
+        <a class="icon"><i class="bx bxl-instagram"></i></a>
+        <a class="icon"><i class="bx bxl-youtube"></i></a>
+        <a class="icon"><i class="bx bxl-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="last">
+      <h4>Services</h4>
+      <p><a>contact and help</a></p>
+      <p><a>maneging your product</a></p>
+      <p><a>products</a></p>
+      <p><a>need help?</a></p>
+    </div>
+    <div class="last">
+      <h4>Your Business</h4>
+      <p><a>create your business</a></p>
+      <p><a>state of bussiness</a></p>
+      <p><a>query related</a></p>
+      <p><a>more</a></p>
+    </div>
+    <div class="last">
+      <h4>vegatables</h4>
+      <p><a>see new products</a></p>
+      <p><a>Replace</a></p>
+      <p><a>your contribution</a></p>
+      <p><a>learn more -></a></p>
+    </div>
+    <div class="last">
+      <h4>address</h4>
+      <p>
+        <a
+          >2 & 3, Corner View, Ashok Chopra Marg, Opposite Bianca Towers,
+          Versova, Andheri West, Mumbai, Maharashtra
+        </a>
+      </p>
+      <p><a>mobile:5643543456</a></p>
+      <p><a>see location</a></p>
+      <p><a>map</a></p>
+    </div>
+    <div class="last">
+      <h4>about</h4>
+      <p><a>om jamnekar(fullstack developer)</a></p>
+      <p><a>993043434</a></p>
+      <p><a>my works-></a></p>
+      <p><a></a></p>
+      <div class="social-icon">
+        <a class="icon"><i class="bx bxl-twitter"></i></a>
+        <a class="icon"><i class="bx bxl-linkedin"></i></a>
+        <a class="icon"><i class="bx bxl-instagram"></i></a>
+
+        <a class="icon"><i class="bx bxl-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+    </article>
+  
+    
+    <script src="../js/function/shopping.js"></script>
+  
+    <script src="../js/structure/material.js" type="module"></script>
+   
+    <script src="../js/function/slider.js"  type="module"></script>
+    <script src="../js/structure/offsales.js" type="module"></script>
+    <script src="../js/function/cards/cards.js"></script>
+    <script src="../js/function/cards/cards2.js"></script>
+    <script src="../js/function/cards/cards3.js"></script>
+    <script src="../js/function/cards/cards4.js"></script>
+    <script src="../js/function/cards/cards5.js"></script>
+    <script src="../js/function/cards/cards6.js"></script>
+    <script src="../js/function/cards/cards7.js"></script>
+    <script src="../js/buyVeggies.js" type="module"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../js/business.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- <script src="analysis.js" charset="utf-8"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  </body>
+</html>
+
+
+<script type="text/javascript">
+
+
+
+
+
+</script>
+
+

@@ -1,0 +1,175 @@
+_title of the web
+
+/Healthy Veggis For Nutrition
+strate form farm to your home
+
+dicription 
+eating our veggis make you Healthier
+Nutritious,fresh and delight vegatables 
+whatever you needs comes to your home in 50 minutes,
+our job is to provide good vegatables and keeping it more fresh 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ vaggi mania sourcer
+
+    overview of VeggiMania
+    
+    our gole is to previde good quality of servic and product to the customer
+    not only the Veggis but the farmer who harvest it
+    keeping  it fresh is our primary gole for that we have more then Thousands of transport facility
+    that helps to complete the customer and producer chain. veggimania is a first web-site that clame to provide you direct farm product to your home
+    instantly. keeping the price at lower level which helps us to connect with multiple customer form all class
+    that the whole concept of vaggimaina
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        speciality of our services
+
+        -fresh
+        we have syetem to locate the best services near you and transfer you the best quality vaggies
+        in limmited time. our main gole is to use the technology for greate results
+
+        -harvest 
+        farming great quality of seeds is important for good vaggies,for that we also guide and provide farmer the facilities required for farming 
+        we take care that veggies should be harvest and grow in good quality enviroment 
+
+        -instant delivary
+        we have Thousands of transportation facilities to deliver the vaggies and keeping it natural,
+        the technology that is use to preserve the veggies also keep it crisp
+
+     --------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+
+
+    vaggiesA
+    cards
+
+        
+        [parameter]
+            name
+                     price
+              fresh
+            logitivity
+            Nutritious
+            qualit
+
+
+
+
+    1. leafy veggis
+        Spinach
+
+        Cabbage
+        Beet Greens
+
+    2. fruity vegetable
+        Pumpkins
+        Peas
+        Tomatoes    
+    4. Flower veggies
+        Broccoli 
+        Cauliflower
+        
+    
+    spepreter
+
+             fresh
+            logitivity
+            Nutritious
+            qualit
+
+------------------------------------------------------------
+
+distributor
+Farm direct marketing is a long felt need of the farmers and consumers of the country as it goes a long way in ensuring higher remuneration to the farmers and meeting the satisfaction level of the consumers through direct sale of the agricultural commodity by the farmers to the consumer at affordable prices.
+
+Direct marketing of agricultural produce helps in complete elimination of middle men and commission agents who charge high level of commission fee from the agriculturists/farmers coming to the market yards for selling their produce and then artificially inflate the retail prices.
+
+What farmers need to consider when selecting which direct marketing channels fit best with a farm’s resources, goals and accessible customer base.
+
+-----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+ the shipping sesion :
+
+ hero image-
+ https://plus.unsplash.com/premium_photo-1673455543558-d0cec3ccc141?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80
+
+
+ the most sold trend menu-
+ carrot
+ https://images.unsplash.com/photo-1582515073490-39981397c445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80
+
+tomato
+ https://images.unsplash.com/photo-1561136594-7f68413baa99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
+
+
+corilander
+ https://images.unsplash.com/photo-1588879460618-9249e7d947d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
+
+ corilander-seeds
+ https://images.unsplash.com/photo-1608797179072-4268dd68eff2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
+
+
+    all grosary
+ https://images.unsplash.com/photo-1470549813517-2fa741d25c92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
+
+ chilli
+ https://images.unsplash.com/photo-1526346698789-22fd84314424?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
+
+ ONION
+ https://images.unsplash.com/photo-1628124307145-0782b4a3565d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80
+
+ corn
+ https://images.unsplash.com/photo-1634467524884-897d0af5e104?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=
+ 
+
+
+
+Catagory
+ filter of veggies:
+  Leafy green – lettuce, spinach and silverbeet etc
+  Cruciferous – cabbage, cauliflower, Brussels sprouts and broccoli etc
+  Marrow – pumpkin, cucumber and zucchini etc
+  Root – potato, sweet potato and yam etc
+  Edible plant stem – celery and asparagus etc
+  Allium – onion, garlic and shallot etc
+  Beets- Turnips, Celeriac, Radish etc
+  Bulbs- Chives, Leeks, Shallot, Onions, Garlic etc
+
+
+
+  pregnancy
+  {
+   Intrauterine Pregnancy 
+   Molar Pregnancy ...
+   Ectopic or Tubal Pregnancy ...
+   Intra-Abdominal Pregnancy ...
+   Singlet Pregnancy ...
+   Multiple Pregnancy ...
+   High-Risk Pregnancy ...
+   Lupus Pregnancy ...
+   Chemical Pregnancy
+  }
+
+  diet types
+  {
+    Intermittent Fasting
+Mediterranean Diet
+The Ketogenic Diet
+If It Fits Your Macros
+Veganism
+Carnivore Diet
+Paleo Diet
+Dessert with Breakfast Diet
+Sirtfood Diet
+  }

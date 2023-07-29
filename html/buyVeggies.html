@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>veggies</title>
+    <link rel="stylesheet" href="../css/buyVeggies.css" />
+    <link rel="stylesheet" href="../css/shopping.css">
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/reviewCart.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="../js/chartcart.js" type="module"> </script>
+    <script src="../js/buyVeggies.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.27.2/dist/apexcharts.min.js"></script>
+   <script src="../js/structure/cart_mat.js " type="module"> </script>
+  </head>
+  <body>
+    <header>
+        <div class="navigator">
+          <div id="brand">
+            <img src="../images/logo/main-min.png" alt="" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#veggies">Veggies</a>
+                <div class="more-list">
+                  <a>-green leafy</a>
+                  <a>-rooted</a>
+                  <a>-fruity</a>
+                  <a>-allium</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#menu">menu</a>
+                <div class="more-list">
+                  <a>-green leafy</a>
+                  <a>-rooted</a>
+                  <a>-fruity</a>
+                  <a>-allium</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#contact">contact</a>
+                <div class="more-list">
+                  <a>-green leafy</a>
+                  <a>-rooted</a>
+                  <a>-fruity</a>
+                  <a>-allium</a>
+                </div>
+              </li>
+              <li><a href="#review">review</a></li>
+              <li id="signup"><a href="#">SignIn</a></li>
+  
+              <li id="signup"><a href="#">Signup</a></li>
+            </ul>
+          </nav>
+          <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#veggies">Veggies</a></li>
+              <li><a href="#menu">menu</a></li>
+              <li><a href="#contact">contact</a></li>
+              <li><a href="#review">review</a></li>
+  
+              <li id="signup"><a href="#">SignIn</a></li>
+  
+              <li id="signup"><a href="#">Signup</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="semi-navigator">
+          <div class="category">
+            <a class="onclickslide" onclick="endclose()">
+              <i class="bx bxs-category"></i>
+              <p>Category</p>
+            </a>
+            <aside class="side-slider">
+              <h3 class="acc">Account</h3>
+  
+              <div class="account">
+                <figure>
+                  <img
+                    src="../images/customer/sai-maddali-cOUtDKBKD2g-unsplash-min.jpg"
+                  />
+                  <aside>
+                    <div class="acc-text">
+                      <h3>account user</h3>
+                      <p>customer</p>
+                    </div>
+                    <div>
+                      <i class="bx bxs-objects-horizontal-left"></i>
+                    </div>
+                  </aside>
+                </figure>
+              </div>
+              <div class="dashboard ctn">
+                <h4 class="sem-acc"><i class="bx bx-home"></i>Dashboard</h4>
+                <h4 class="sem-acc"><i class="bx bx-wallet-alt"></i>Wallets</h4>
+                <h4 class="sem-acc">
+                  <i class="bx bx-notification"></i>Notifiaction
+                </h4>
+                <h4 class="sem-acc">
+                  <i class="bx bx-purchase-tag"></i>Purchase
+                </h4>
+                <h4 class="sem-acc">
+                  <i class="bx bx-coin bx-rotate-270"></i>coins
+                </h4>
+              </div>
+              <div class="filters">
+                <div class="filter-heading">
+                  <i class="bx bx-filter-alt"></i>
+                  <h3 class="acc">Filter</h3>
+                </div>
+                <div class="slider-container">
+                  <div class="filter-option">
+                    <div class="handler" onclick="popup()">
+                      <h3>filter of veggies:</h3>
+                      <i class="checkoption bx bx-chevron-down"></i>
+                    </div>
+  
+                    <aside>
+                      <a>
+                        <p>leafy green</p>
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider-2"></span>
+                        </label>
+                      </a>
+                      <a>
+                        <p>cruciferous marrow</p>
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider-2"></span>
+                        </label>
+                      </a>
+                      <a>
+                        <p>Roots</p>
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider-2"></span>
+                        </label>
+                      </a>
+                      <a>
+                        <p>Edible plants</p>
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider-2"></span>
+                        </label>
+                      </a>
+                      <a>
+                        <p>Allium</p>
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider-2"></span>
+                        </label>
+                      </a>
+                      <a>
+                        <p>Allium</p>
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider-2"></span>
+                        </label>
+                      </a>
+                      <a>
+                        <p>Beet</p>
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider-2"></span>
+                        </label>
+                      </a>
+                      <a>
+                        <p>Bulbs</p>
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider-2"></span>
+                        </label>
+                      </a>
+                      <a>
+                        <p>Select All</p>
+                        <label class="switch">
+                          <input
+                            type="checkbox"
+                            class="btn-select"
+                            onclick="selectall()"
+                          />
+                          <span class="slider"></span>
+                        </label>
+                      </a>
+                      <div class="btn-container">
+                        <button class="okButon">selected</button>
+                        <button class="okButon" type="reset">cancel</button>
+                      </div>
+                    </aside>
+                  </div>
+                </div>
+  
+                <div class="slider-container">
+                  <div class="veggies-option">
+                    <div class="handler" onclick="popup1()">
+                      <h3>For child</h3>
+                      <i class="checkoption bx bx-chevron-down"></i>
+                    </div>
+  
+                    <aside>
+                      <div class="veggies-category">
+                        <article>
+                          <a class="head-filter" onclick="veggies1()">
+                            <p>age</p>
+                            <i class="checkoption bx bx-chevron-down"></i>
+                          </a>
+  
+                          <aside>
+                            <a>
+                              <p>1-3 years</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>3-5 years</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>5-7 years</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>7-12 years</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>12-14 years</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>14-16 years</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                          </aside>
+                        </article>
+                        <article class="artical2">
+                          <a class="head-filter" onclick="veggies2()">
+                            <p>height</p>
+                            <i class="checkoption bx bx-chevron-down"></i>
+                          </a>
+  
+                          <aside>
+                            <a>
+                              <p>0.5ft-1ft</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+  
+                            <a>
+                              <p>1ft-2ft</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+  
+                            <a>
+                              <p>2ft-3ft</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>3ft-4ft</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>4ft-5ft</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>5ft-6ft</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                          </aside>
+                        </article>
+                        <article class="meals-component">
+                          <a class="head-filter" onclick="meals()"
+                            ><p>meal's components</p>
+                            <i class="checkoption bx bx-chevron-down"></i>
+                          </a>
+  
+                          <aside>
+                            <a>
+                              <p>Nutrition</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Nutrient-dense</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Protein</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Carbohydrates</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Healthy fat</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Calcium</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Iron</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Folato</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+  
+                            <a>
+                              <p>Fibers</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+  
+                            <a>
+                              <p>vitamins</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+  
+                            <a>
+                              <p>Select All</p>
+                              <label class="switch">
+                                <input type="checkbox" onclick="selectall1()" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                          </aside>
+                        </article>
+                      </div>
+                      <div class="btn-container">
+                        <button class="okButon">selected</button>
+                        <button class="okButon" type="reset">cancel</button>
+                      </div>
+                    </aside>
+                  </div>
+                </div>
+                <div class="slider-container">
+                  <div class="pregnancy-option">
+                    <div class="handler" onclick="popup3()">
+                      <h3>Pregnancy</h3>
+                      <i class="checkoption bx bx-chevron-down"></i>
+                    </div>
+  
+                    <aside>
+                      <div class="pregnancy-category">
+                        <article>
+                          <a class="head-filter" onclick="veggies3()">
+                            <p>Months</p>
+                            <i class="checkoption bx bx-chevron-down"></i>
+                          </a>
+  
+                          <aside>
+                            <a>
+                              <p>0-10week</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>10-15week</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>15-20week</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>20-25week</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>25-30week</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>30-35week</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>35-40week</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>40-45week</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                          </aside>
+                        </article>
+                        <article class="artical4">
+                          <a class="head-filter" onclick="pragi()">
+                            <p>Pregnancy Problem</p>
+                            <i class="checkoption bx bx-chevron-down"></i>
+                          </a>
+  
+                          <aside>
+                            <a>
+                              <p>Intrauterine Pregnancy</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Molar Pregnancy</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Ectopic or Tubal Pregnancy</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Intra-Abdominal Pregnancy</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Singlet Pregnancy</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Multiple Pregnancy</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>High-Risk Pregnancy</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Lupus Pregnancy</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Chemical Pregnancy</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                          </aside>
+                        </article>
+                        <article class="meals-component1">
+                          <a class="head-filter" onclick="meals1()"
+                            ><p>meal's components</p>
+                            <i class="checkoption bx bx-chevron-down"></i>
+                          </a>
+  
+                          <aside>
+                            <a>
+                              <p>Nutrition</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Nutrient-dense</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Protein</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Carbohydrates</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Healthy fat</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Calcium</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Iron</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Folato</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+  
+                            <a>
+                              <p>Fibers</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+  
+                            <a>
+                              <p>vitamins</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+  
+                            <a>
+                              <p>Iron</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>DHA</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Calcium</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                          </aside>
+                        </article>
+                      </div>
+                      <div class="btn-container">
+                        <button class="okButon">selected</button>
+                        <button class="okButon" type="reset">cancel</button>
+                      </div>
+                    </aside>
+                  </div>
+                </div>
+  
+                <div class="slider-container">
+                  <div class="diet-option">
+                    <div class="handler" onclick="diet1()">
+                      <h3>Diet</h3>
+                      <i class="checkoption bx bx-chevron-down"></i>
+                    </div>
+  
+                    <aside>
+                      <div class="diet-category">
+                        <article>
+                          <a class="head-filter" onclick="veggies4()">
+                            <p>Body Weight</p>
+                            <i class="checkoption bx bx-chevron-down"></i>
+                          </a>
+  
+                          <aside>
+                            <a>
+                              <p>20kg - 30kg</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>30kg - 40kg</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>40kg - 50kg</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>50kg - 60kg</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>60kg - 70kg</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>70kg - 80kg</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>80kg - 90kg</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>90kg - 100kg</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+  
+                            <a>
+                              <p>100kg - 110kg</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>110kg - 120kg</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>120kg - 130kg</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                          </aside>
+                        </article>
+                        <article class="artical4">
+                          <a class="head-filter" onclick="types()">
+                            <p>Diect type</p>
+                            <i class="checkoption bx bx-chevron-down"></i>
+                          </a>
+  
+                          <aside class="top">
+                            <a>
+                              <p>Intermittent Fasting</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Mediterranean Diet</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Ketogenic Diet</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Veganism</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Carnivore Diet</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Paleo Diet</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Dessert &Breakfast Diet</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Sirtfood Diet</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a> </a>
+                          </aside>
+                        </article>
+                        <article class="meals-component2">
+                          <a class="head-filter" onclick="miniral()"
+                            ><p>meal's components</p>
+                            <i class="checkoption bx bx-chevron-down"></i>
+                          </a>
+  
+                          <aside>
+                            <a>
+                              <p>Nutrition</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Nutrient-dense</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Protein</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Carbohydrates</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Healthy fat</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Calcium</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Iron</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Folato</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+  
+                            <a>
+                              <p>Fibers</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+  
+                            <a>
+                              <p>vitamins</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+  
+                            <a>
+                              <p>Iron</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>DHA</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                            <a>
+                              <p>Calcium</p>
+                              <label class="switch">
+                                <input type="checkbox" />
+                                <span class="slider-2"></span>
+                              </label>
+                            </a>
+                          </aside>
+                        </article>
+                      </div>
+                      <div class="btn-container">
+                        <button class="okButon">selected</button>
+                        <button class="okButon" type="reset">cancel</button>
+                      </div>
+                    </aside>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard ctn">
+              <h3 class="acc icon-dash"><i class="bx bxs-business" ></i>Business</h3>
+                <a href=""> <h4 class="sem-acc"><i class="bx bx-money"></i>Your Business</h4></a>
+                <a href="explore.html"> <h4 class="sem-acc"><i class='bx bx-extension' ></i></i>Explore</h4></a>
+                <a href="newBusiness.html"> <h4 class="sem-acc" ><i class="bx bx-star "></i>New Business</h4></a>
+                <a href="business.html"><h4 class="sem-acc"><i class='bx bxl-graphql' ></i>Analysis</h4></a>
+              </div>
+              <div class="dashboard ctn">
+                <h3 class="sem-acc"><i class='bx bx-history' style='color:#dadada' ></i>History</h3>
+                <h3 class="sem-acc">&#8592; Logout</h3>
+  
+                <!-- <h4 class="sem-acc">
+                  <i class="bx bx-notification"></i>Notifiaction
+                </h4>
+                <h4 class="sem-acc">
+                  <i class="bx bx-purchase-tag"></i>Purchase
+                </h4>
+                <h4 class="sem-acc">
+                  <i class="bx bx-coin bx-rotate-270"></i>coins
+                </h4> -->
+              </div>
+            </aside>
+          </div>
+  
+          <div class="option">
+            <a><p>Brands</p></a>
+            <a><p>News</p></a>
+            <a><i class="bx bxs-cart"></i></a>
+            <a><i class="bx bxs-heart"></i></a>
+  
+            <form>
+              <input type="search" placeholder="Search" />
+              <button type="submit"><i class="bx bx-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <div class="hero-container-buy-dynamic"></div>
+      <section class="multi-detail-buy">
+        
+        <div class="btn-changing-slide">
+          <button class="onclick-buy"><p>description</p></button>
+          <button  class="onclick-buy"><p>composition</p></button>
+          <button class="onclick-buy"><p>shipping-returns</p></button>
+          <button class="onclick-buy"> <p>free-sample</p></button>
+        </div>
+        
+        
+        <div class="wrapper-buy-container">
+          
+          <div class="wrapper-buy">
+            <div class="item active">
+              <div class="description-buy">
+                <h2>Your Nutritional Powerhouse</h2>
+                <h4>Welcome to our website, where we celebrate the goodness of broccoli, one of nature's most nutritious and versatile vegetables! 
+                </h4>
+                
+                
+                <div class="grid-container-buy">
+
+            <div class="text-dis-con">
+              <h3>Discover the Health Benefits:
+                
+              </h3>
+              
+              <p>Broccoli is a cruciferous vegetable packed with essential vitamins, minerals, and antioxidants. Each delectable floret offers a wealth of nutrients that support your overall well-being. From boosting your immune system to promoting heart health, broccoli is a superstar in the world of nutrition.</p>
+              <h3>Rich in Vitamins & Minerals:</h3>
+              <p>
+                
+                Loaded with vitamin C, vitamin K, and vitamin A, broccoli contributes to healthy skin, a strong immune system, and good vision. It's also an excellent source of folate, potassium, and fiber, making it an ideal choice for maintaining a balanced and nourished body.
+              </p>
+            </div>         
+            <div class="img-dis-con">
+              <img src="../images/description/1.jpg" alt="">
+            </div>  
+            <div class="img-dis-con">
+              <img src="../images/description/2.jpg" alt="">
+            </div> 
+            <div class="text-dis-con">
+              <h3>Powerful Antioxidants: </h3> 
+              <p>Broccoli is abundant in antioxidants like sulforaphane, quercetin, and beta-carotene. These antioxidants help combat oxidative stress, protect your cells from damage, and reduce the risk of chronic diseases.
+              </p>
+              <h3>
+                Supports Heart Health:
+              </h3>
+              <p>
+                A diet rich in broccoli can be beneficial for your heart health. The vegetable's fiber content, along with compounds like glucoraphanin, helps lower cholesterol levels, promoting a healthy heart and reducing the risk of cardiovascular issues.
+              </p>
+            </div>
+            <div class="text-dis-con">
+              <h3>
+                Cancer-Fighting Properties:
+              </h3>
+              <p>
+                
+                Studies have shown that the compounds present in broccoli may help reduce the risk of certain types of cancer. Sulforaphane, in particular, has been linked to having potential anti-cancer properties.
+              </p>
+              <h3>
+                
+                How to Enjoy Broccoli:
+              </h3>
+              <p>
+              
+                Embrace the versatility of broccoli in your culinary endeavors! Whether you steam it to retain its nutrients, roast it for a delightful crunch, or incorporate it into flavorful stir-fries and soups, there are countless ways to savor this nutritious gem.
+              </p>
+            </div>
+            <div class="img-dis-con">
+              
+              <img src="../images/description/3.jpg" alt="">
+              
+            </div> 
+            <div class="img-dis-con">
+              
+              <img src="../images/description/4.jpg" alt="">
+            </div> 
+            <div class="text-dis-con">
+              
+              <h3>
+                Our Commitment to Quality:
+              </h3>
+              <p>
+                
+                At veggiesmaina, we are passionate about providing you with the freshest and finest broccoli available. Our carefully selected produce undergoes rigorous quality checks to ensure you receive the best nature has to offer.
+              </p>
+              
+              <h3>
+                
+              Explore Our Broccoli Selection:
+            </h3>
+            
+            <p>
+              
+              Browse through our selection of fresh broccoli and elevate your meals with a healthy twist. Experience the taste, texture, and nutrition that only the finest broccoli can deliver.
+            </p>
+          </div>
+          
+        </div>
+        
+        <h5>Contact Us:</h5> 
+        
+        
+        <p>For any inquiries or assistance, our friendly customer support team is here to help. Drop us a line at omjamnekar@gmail.com/7743827387 and let us make your broccoli journey a delightful one.
+        </p> 
+        <p>Discover the joy of eating well with broccoli and unlock the secrets to a healthier lifestyle. Start your broccoli adventure today and savor the remarkable flavors and health rewards that this exceptional vegetable brings to your table!
+        </p>
+      </div>
+             </div> 
+  
+            <div class="item">
+      <div class="composition">
+        <div class="header-com-buy">
+          <h2>Broccoli: A Nutritional Powerhouse</h2>
+          <p>Broccoli, scientifically known as Brassica oleracea, belongs to the cruciferous vegetable family. </p>
+        </div>
+        <div class="twoflex">
+          <div class="nameveggies">
+            <h2>Brocoli</h2><span class="com-name">Alex CO.CTD</span>
+            <p>In a world where the pursuit of health and wellness is paramount, we often find ourselves seeking the perfect balance between taste and nutrition. Look no further than broccoli – a green marvel of nature that stands as a symbol of vitality, versatility, and unparalleled health benefits. </p>
+                  <ul class="icons-bene-buy">
+                    <li>
+                      <i class='bx bx-heart' ></i>
+                      <p>  Nutritional Benefits:</p>
+                    </li>
+                    <li>
+                      <i class='bx bx-spa' ></i>
+                      <p>Organic or Locally Sourced:</p>
+                    </li>
+                    <li>
+                      <i class='bx bx-spa' ></i>
+                      <p>Vegetarian or Vegan Friendly:</p>
+                    </li>
+                    <li>
+                      <i class='bx bx-world' ></i>
+                      <p>Sustainability or Eco-Friendly:</p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- chart -->
+                <div id="chart"></div>
+              </div>
+              <div class="twoflex-1">
+              <h2> The Nutritional Superstar:</h2>
+              <p>Broccoli, scientifically known as Brassica oleracea, belongs to the cruciferous vegetable family. Bursting with essential vitamins, minerals, and antioxidants, each delicate floret contributes significantly to a well-rounded diet. Rich in vitamin C, broccoli supports our immune system, fortifying our body's defenses against illness. It is also an abundant source of vitamin K, essential for blood clotting and bone health. Additionally, the vegetable boasts generous amounts of vitamin A, contributing to healthy skin, vision, and mucous membranes.
+              </p>
+              <h2>The Power of Antioxidants:</h2>
+              <p>
+                Broccoli's true superpower lies in its extraordinary antioxidant content. Sulforaphane, a potent antioxidant found in broccoli, has been extensively studied for its potential to combat oxidative stress and reduce the risk of chronic diseases. Furthermore, quercetin, another antioxidant abundant in this green gem, contributes to the neutralization of free radicals, promoting overall cellular health.
+              </p>
+              <h2>
+                A Friend to Your Heart:</h2>
+                <p>A heart-healthy diet is crucial for maintaining cardiovascular well-being, and broccoli plays a significant role in achieving that goal. The vegetable's high fiber content aids in reducing cholesterol levels, thereby promoting a healthy heart. Additionally, the presence of glucoraphanin in broccoli has been linked to potential anti-inflammatory and heart-protective effects.
+                </p>
+                <h2>
+                  Cancer-Fighting Properties:</h2>
+                  <p>
+                    Among its numerous virtues, broccoli has garnered attention for its potential to reduce the risk of certain cancers. The sulforaphane in broccoli has shown promising anti-cancer properties, making it a valuable addition to any anti-cancer diet. Research suggests that consuming broccoli regularly may help decrease the risk of breast, prostate, and colon cancers.
+                  </p>
+                  <h2>
+              Versatile Culinary Wonder:
+            </h2>
+            <p>
+              Beyond its nutritional prowess, broccoli shines as a versatile culinary ingredient. Steamed to perfection, it retains its essential nutrients and delightful crunch. Roasted with a drizzle of olive oil, it becomes a delectable treat that adds flavor and texture to any meal. Broccoli's adaptability makes it an excellent companion in stir-fries, salads, soups, and casseroles, providing a nutritional boost to a wide range of dishes.
+            </p>
+            
+          </div>
+          
+        </div>
+        <div class="spacer">
+          <h2>Growth of the Business:</h2>
+          <p>Scaling New Heights:</p>
+        </div>
+        <div id="wave"></div>
+        
+             </div>
+        
+          <div class="item">
+            <div class="shipping">
+              <div>
+
+                <div class="hero-se">
+                  <h2>Swift Shipping, Delivered to Your Doorstep!</h2>
+                  <p>Experience hassle-free shipping and timely delivery for all your favorite products.</p>
+                </div>
+
+                <div class="percentage-of-shipping">
+                  <div>
+
+                    <div class="name-container-ship">
+                      <div>
+                        <h3>Customer Reviews: A Shipping Experience Like No Other</h3>
+                        <p>Discover why our shipping service is earning rave reviews from satisfied customers worldwide.</p>
+                      </div>
+                      
+                      <div id="pyachart"></div>
+                    </div>
+                    <div class="card-shorts-ship">
+                      <div class="card-short">
+                        <i class='bx bxs-zap'></i>
+                        <p>Lightning-Fast Delivery</p>
+                      </div>
+                     
+                      <div class="card-short">
+                        <i class='bx bxs-heart' ></i>
+                        <p>Exceptional Customer Care</p>
+                      </div>
+                      <div class="card-short">
+                        <i class='bx bx-timer' ></i>
+                        <p>Reliable and On-Time</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="return-img">
+                    <img src="../images/shipping/shippinghero.jpg" alt="">
+                  </div>
+               
+                </div>
+
+                <div class="second-return">
+                  <div class="card-ship">
+                    <div class="cards-s">
+                      <h2>Expedited Shipping</h2>
+                      <p>Our expedited shipping option ensures that your order is prioritized and dispatched as quickly as possible.</p>
+                    </div>
+                    <div class="cards-s">
+                      <h2>Real-Time Tracking:</h2>
+                      <p>Explanation: Stay informed throughout the shipping process with real-time tracking. </p>
+                    </div>
+                    <div class="cards-s">
+                      <h2>Free Shipping on Orders Over</h2>
+                      <p> Enjoy the convenience of free shipping on all orders over a specified threshold amount. </p>
+                    </div>
+                    <div class="cards-s">
+                      <h2>Secure Packaging:</h2>
+                      <p>Your orders are carefully packed with utmost attention to ensure they arrive in perfect condition. </p>
+                    </div>
+                    <div class="cards-s">
+                      <h2>International Shipping:</h2>
+                      <p>Explanation: We proudly offer international shipping, making it possible for customers around the world to access our products. </p>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="return-container-ship">
+                  <div class="note-ship">
+                    <h2>Hassle-Free Returns</h2>  
+                    <p>Customer Satisfaction Guaranteed</p>
+                  </div>
+                  <div class="return-poli-container">
+
+                    <div class="return-poli">
+                      <h2>30-Day Return Policy</h2>
+                      <p>We offer a generous 30-day return policy to ensure that you are completely satisfied with your purchase. If for any reason you are not happy with your order, you can initiate a return within 30 days of receiving the product.</p>
+                    </div>
+              
+                    <div class="return-poli">
+                      <h2>Easy Online Return Process</h2>
+                      <p>Returning a product is as easy as a few clicks. Our user-friendly online return portal allows you to initiate and track returns effortlessly. Simply follow the instructions provided, and you'll be guided through the process step by step.</p>
+                    </div>
+              
+                    <div class="return-poli">
+                      <h2>Prepaid Return Shipping</h2>
+                      <p>We value your convenience, which is why we provide prepaid return shipping labels for eligible returns. No need to worry about shipping costs – we've got you covered.</p>
+                    </div>
+              
+                    <div class="return-poli">
+                      <h2>Prompt Refunds</h2>
+                      <p>Once we receive your returned item, we process refunds promptly. You can expect your refund to be issued within [number of days] of the return being approved. Rest assured, your money will be back in your account soon.</p>
+                    </div>
+              
+                    <div class="return-poli">
+                      <h2>Excellent Customer Support</h2>
+                      <p>Our dedicated customer support team is here to assist you with any questions or concerns you may have about the return process. Feel free to reach out, and we'll be glad to help.</p>
+                    </div>
+              
+                    <div class="return-poli">
+                      <h2>Pickup Service for Bulky Items</h2>
+                      <p>If you have large or bulky items to return, we offer a convenient pickup service. Simply let us know, and we'll arrange for a pickup at your designated address. This saves you time and effort, making the return process even smoother.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          
+            <div class="item">
+            <div class="delivery-img">
+             
+                <div class="head-text-del">
+                  <h2>Free Sample of Our Fresh Veggies</h2>
+                  <p>At Vaggies, we believe in the exceptional quality and taste of our vegetables, and we want you to experience it firsthand. That's why we're thrilled to offer you a complimentary sample of our finest, farm-fresh produce.
+
+                  </p>
+                  <div class="btn-delive"> 
+                    <button>see now</button>
+                    <button>more</button>
+                    
+                  </div>
+                </div>
+              
+            
+              <div class="img-sec">
+                <img src="../images/shipping/truck.png" alt="">
+              </div>
+              </div>
+              <div class="side-two-con-deli">
+                <div class="side-one-con">
+                  <h2>How It Works:</h2>
+
+                  <p>Fill Out the Form: Simply provide us with your name, email address, and shipping details through the form below. Rest assured, your information is safe with us; we respect your privacy.</p>
+                  <div>
+                    <img src="../images/shipping/side-con.png" alt="">
+                  </div>
+                </div>
+                
+                <div class="side-two-con-3">
+                  <div class="side-contect">
+                    <div class="photo-return-web">
+                       <img src="../images/shipping/exchange.png" alt="">
+                    </div>
+                    <h2>Select Your Sample:  </h2>
+                    <p>Choose your preferred vegetable from the options available in the dropdown menu. Our selection includes a variety of seasonal veggies that will tantalize your taste buds.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="head-col-side">
+                <div class="three-con">
+                 
+                  <h2>Limited Time Offer - Get Your Free Sample Today!
+                  </h2>
+                  <p> At Vaggies, we're thrilled to offer you a limited time opportunity to savor the delectable taste of our farm-fresh vegetables with a complimentary sample. This exclusive offer won't last forever, so make sure you claim your free sample today before it's gone!
+                  </p>
+                    <div class="card-offer-2">
+                      <div class="card-offer-ff">
+                        <i class='bx bx-star'></i>
+                      <h2>Our Commitment to Quality:</h2>
+                      </div>
+
+                      <div class="card-offer-ff">
+                        <i class='bx bx-leaf' ></i>
+                      <h2>Experience the Freshness:</h2>
+                      </div>
+
+                      <div class="card-offer-ff">
+                        <i class='bx bx-timer'></i>
+                      <h2>Limited Stocks Available:</h2>
+                      </div>
+
+                      <div class="card-offer-ff">
+                        <i class='bx bx-dollar-circle'></i>
+                      <h2>No Hidden Costs - Shipping's On Us:</h2>
+                      </div>
+                    </div>
+
+                    <div class="offer-btn">
+                      <button>See Offers</button>
+                    </div>
+                </div>
+               
+                <div class="cards-for-offer">
+                  <h2 class="term-con">Terms & Conditions:</h2>
+                  <div class="cards-for-1">
+                    <h2> One Sample Per Household:</h2>
+                    <p> Each household is eligible to receive one free sample. Duplicate entries will be considered invalid.</p>
+                  </div>
+                  <div class="cards-for-1">
+                    <h2> Limited Stocks Available:</h2>
+                    <p> Our free samples are available on a first-come, first-served basis. Once our limited stock is exhausted, this offer will no longer be available.
+                    </p>
+                  </div>
+                  <div class="cards-for-1">
+                    <h2> Valid for New Customers Only:</h2>
+                    <p> This offer is exclusively available for new customers who haven't previously received a free sample from Vaggies.
+                    </p>
+                  </div>
+                  <div class="cards-for-1">
+                    <h2> Shipping Restrictions:</h2>
+                    <p> Currently, we can only ship free samples to addresses within the United States. We apologize for any inconvenience caused to our international customers.
+                    </p>
+                  </div>
+                  <div class="cards-for-1">
+                    <h2> Shipping Restrictions:</h2>
+                    <p> Currently, we can only ship free samples to addresses within the United States. We apologize for any inconvenience caused to our international customers.
+                    </p>
+                  </div>
+                  <div class="cards-for-1">
+                    <h2> Shipping Restrictions:</h2>
+                    <p> Currently, we can only ship free samples to addresses within the United States. We apologize for any inconvenience caused to our international customers.
+                    </p>
+                  </div>
+                  <div class="cards-for-1">
+                    <h2> Shipping Restrictions:</h2>
+                    <p> Currently, we can only ship free samples to addresses within the United States. We apologize for any inconvenience caused to our international customers.
+                    </p>
+                  </div>
+                  
+
+                 
+
+ 
+ 
+               </div>
+                <div class="one-con-offer">
+                  <p>If you enjoy your free sample, we'd be thrilled if you share your experience with friends and family. Let them know about the freshness and taste of Vaggies' vegetables and spread the joy of healthy, delicious eating.</p>
+                </div>
+              </div>
+              
+            </div>
+         </div>
+
+
+        </div>
+
+
+     
+      
+      
+      
+      
+    </section>
+    
+    <section class="review-container-cart">
+      <div class="gta-a">
+        <div  class="figure-chart">
+
+          <h2>Discover What Our Customers Are Saying</h2>
+          <p>Hear from our satisfied customers and their delightful experiences with Vaggies' farm-fresh vegetables!        </p>
+         
+          <div class="chart-actual">
+           <div class="middle"> <div id="Review"></div></div>
+          </div>
+               
+        </div>
+        <div class="chart-text">  
+                <div  id="chartnum"></div>
+                <div class="howcal">
+                  <div class="see-more-less-container">
+                    <!-- Content for the first container -->
+                    <p>
+                      We love hearing from our valued customers! Below are some of the reviews and feedback they've shared about their experiences with Vaggies' farm-fresh vegetables.
+                    </p>
+                    <button class="seeMoreBtn">See More</button>
+                    <button class="seeLessBtn">See Less</button>
+                  </div>
+                 
+                  <hr>
+                  <div  class="btn-re-con">
+
+                    <h2 class="input-re">Review this product</h2>
+                    
+                    <p>Share your thoughts with other customers</p>
+                    <button class="last-re-click">Write a product review</button>
+                  </div>
+        
+                </div>
+        </div>
+        
+      </div>
+
+    <div class="section-review-container">
+      
+      <div>
+      <div class="review-img-custome-if">
+
+       <h2 >Reviews with images</h2>
+       <div class="if-img-container">
+
+        <div class="image-container-grid">
+          <img src="../images/composition/broccoli-black-bowl-black-surface-top-view-with-copy-space.jpg" alt="">
+        
+        </div>
+        <div class="image-container-grid">
+          <img src="../images/composition/broccoli-black-bowl-black-surface-top-view-with-copy-space.jpg" alt="">
+        
+        </div>
+        <div class="image-container-grid">
+          <img src="../images/composition/broccoli-black-bowl-black-surface-top-view-with-copy-space.jpg" alt="">
+        
+        </div>
+      </div>          
+      <a>See all customer images</a> 
+    </div>
+
+<select id="cars">
+  <option value="">Top reviews</option>
+  <option value="">
+    most reviews</option>
+</select>
+<h3>Top reviews from India</h3>
+<div class="name-ac-review">
+  <div class="name-ac-review-img">
+    <img src="" alt="">
+  </div>
+  <p>Abhishek</p>
+  <div class="star-cion-re">
+    <i class='bx bxs-star'></i>
+    <i class='bx bxs-star'></i>
+    <i class='bx bxs-star'></i>
+    <i class='bx bxs-star-half' ></i>
+    <i class='bx bx-star' ></i>
+  </div>
+  <span>Four Stars</span>
+  <p>Reviewed in India 🇮🇳 on 19 March 2016</p>
+  <a>Verified Purchase</a>
+  
+  <p class="review-comment">
+    Good but bajaoo written on it is kind of annoying.
+    U know what i mean.
+  </p>
+  <p>4 people found this helpful</p>
+  
+  <div class="btn-helpfull-con">
+    
+    <button>Helpful</button>
+    <button>Report</button>
+  </div>
+
+  </div>	
+  </div>
+</div>
+</div>
+
+
+    </section>
+    
+    <script src="../js/see.js"></script>
+  </body>
+  
+  <!-- <script>
+    // Function to get query parameters from URL
+    function getQueryParams() {
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      return Object.fromEntries(urlParams.entries());
+    }
+    
+    // Get query parameters from the URL
+    const queryParams = getQueryParams();
+    
+    // Update the displayed data with the received query parameters
+    // document.getElementById("displayedName").innerText =
+    //   queryParams.name || "Name not provided";
+    
+    
+    document.getElementById("displayedImage").src = queryParams.img || "default-image.jpg";
+  </script>
+ -->
+
+
+</html>
+
+
+<!-- <section class="hero-container-buy">
+  <div class="image-buy">
+    <div class="img-buy">
+      <img src="" id alt="">
+    comment <img src="" alt="Profile Image" id="displayedImage">
+      <img
+       src="https://cdn.shopify.com/s/files/1/0579/7924/0580/t/18/assets/shutterstock_302403560.jpgv1661854052?v=1661854091"
+        alt=""
+      />
+    </div>
+    <div class="veggies-buy">
+      <p>Brocoli - alexProduction</p>
+    </div>
+    <div class="stock-date-buy">
+     <p> <span class="blue">FREE delivery
+
+     </span><span class="black">Sunday, 23 July</span> on your first order. </p>
+     <p>Details Or fastest delivery Tomorrow, 22 July. Order within <span> 1 hr 43 mins</span>.<a class="blue">Details</a></p>
+     <p class="blue"><i class='bx bxs-location-plus' ></i>  Select delivery location-></p>
+     <h3 class="stock-txt green">In stock</h3>
+     <p>Sold by <span class="black">alexProduction</span> Retail and Fulfilled by <span class="green">veggiesmania.</span> </p>
+    </div>
+
+
+    <div class="video-content">
+      <div class="veggies-subimg">
+        <img src="" alt="">
+      </div>
+      <div class="veggies-video">
+       comment <a href="https://www.bing.com/videos/riverview/relatedvideo?&q=broccoli+video&&mid=990CDF7953FA80A7B700990CDF7953FA80A7B700&&FORM=VRDGAR"></a><img src="https://th.bing.com/th?id=ALSTU3DCFE2EA8D44D5671B53AFA4434704962E0ACE90ACAC6C7F90D335BD28E84079&w=472&h=280&rs=2&o=6&oif=webp&pid=SANGAM" alt=""> 
+      </div>
+      <div class="veggies-charact"></div>
+    </div>
+  </div>
+
+  <div class="buy-content">
+    <div class="identity-buy">
+
+      <h2 class="veggies-name" id="displayedName">Brocoli</h2>
+      <p class="brand-buy"> brand:<span>Alex</span></p>
+    </div>
+    <p class="distributor-product-txt"> driven by <span>alex-vegatable</span> production </p>
+
+    <div class="benefits-buy">
+      <div><p>Vitamin A <br> 3500 amu</p></div>
+      <div><p>Sodium <br> 192 mg</p></div>
+      <div><p>Potassium <br> 105 mg</p></div>
+      <div><p>Iron <br> 0.4 mg</p></div>
+      <div><p>Calcium <br> 20 mg</p></div>
+    </div>
+
+    
+    <ul style="list-style-type: none" class="star-buy">
+      <li class="star-number"><span>3.5/5</span></li>
+      <li><i class="bx bxs-star"></i></li>
+      <li><i class="bx bxs-star"></i></li>
+      <li><i class="bx bxs-star"></i></li>
+      <li><i class='bx bxs-star-half'></i></li>
+      <li><i class="bx bx-star"></i></li>
+    </ul>
+
+    
+    <div>
+      <span class="discount-buy"> 40%off on veggies </span>
+      <span>Read more</span>
+    </div>
+    <p class="price">$6.04</p>
+    <p class="para-buy-txt">
+      nutritious, and vibrant, our fresh carrots are the perfect addition to
+      your shopping cart. Packed with essential vitamins and minerals, these
+      crunchy delights offer a burst of flavor in every bite. Whether you're
+      juicing, cooking, or snacking, our premium carrots are sure to elevate
+      your culinary creations.
+    </p>
+    <p class="quantity-text">quantity</p>
+    <div class="quantity-input-buy">
+      <input type="number"  minlength="1" maxlength="100" required placeholder="1"/>
+      <p>Add to wish list</p>
+    </div>
+    <div class="btn-buy">
+      <button>Buy now</button>
+      <button>AddtoCart</button>
+    </div>
+    <div class="line"></div>
+    <div>
+      
+      <p class="secure-buy blue"> <i class='bx bx-lock-alt' ></i>Secure transaction</p>
+      <p class="grift-card-buy"><input type="checkbox">Add Giftcard</p>
+    </div>
+    
+    <div class="icon-info-buy">
+      <div class="icon-con-buy">
+        <i class='bx bxs-truck' ></i>
+        <p>Free Delivery</p>            
+      </div>
+      <div class="icon-con-buy">
+        <i class='bx bx-money'></i>
+        <p>Pay on Delivery</p>            
+      </div>
+      <div class="icon-con-buy">
+        <i class='bx bx-lock-alt' ></i>
+        <p>Secure transaction</p>            
+      </div>
+      <div class="icon-con-buy">
+        <i class='bx bx-leaf' ></i>
+        <p>Healthy veggies</p>            
+      </div>
+    </div>
+
+    <p class="checkout-text"> Checkout safely</p>
+    <div class="checkout">
+      comment PayPal Logo comment<table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/c2/webapps/mpp/home?locale.x=en_C2" title="PayPal" onclick="javascript:window.open('https://www.paypal.com/c2/webapps/mpp/home?locale.x=en_C2','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" border="0" alt="PayPal Logo"></a></td></tr></table> PayPal Logo 
+        <img src="https://www.vectorlogo.zone/logos/upi/upi-ar21.svg" alt="">
+   <img src="https://sbi.co.in/o/SBI-Theme/images/custom/logo.png" alt="">
+   <svg height="-358" viewBox="-.04 195.13 511.99 121.87" width="2500" xmlns="http://www.w3.org/2000/svg"><path d="m70.91 195.13c7.29 12.48 14.58 24.82 21.6 37.3-11.5 20.33-23 40.81-34.92 61-4.63 7.71-8.98 15.57-13.6 23.28-14.72.14-29.45.14-44.03 0 .42-.98.84-1.96 1.4-2.94 23.27-39.55 46.55-78.95 69.55-118.64zm319.74 30.57c8.13 15.15 16.27 30.29 24.4 45.44-2.8 0-5.75-.14-8.55 0-1.96-3.37-3.65-6.87-5.47-10.24-7.15-.28-14.44 0-21.6-.14-1.68 3.51-3.65 6.87-5.47 10.24h-8.41c8.13-15.15 16.4-30.29 25.1-45.3m-7.72 28.75c4.91 0 9.82 0 14.72.14-2.52-4.63-4.63-9.26-7.29-13.74a316.29 316.29 0 0 0 -7.43 13.6zm36.74-28.89c12.2 10.66 24.54 21.32 36.6 32.11.28-9.82 0-19.49.28-29.31 2.66 0 5.19.14 7.85.14-.14 15.01 0 30.15 0 45.16-7.99-6.73-15.85-13.74-23.7-20.61-4.49-3.79-8.83-7.57-13.04-11.64-.14 9.96 0 19.77-.14 29.73h-7.85c0-15.29-.14-30.43 0-45.58zm-259.15 45.44c8.41-15.15 16.69-30.43 25.38-45.44 8.13 15.15 16.13 30.29 24.4 45.44h-8.69a233.5 233.5 0 0 1 -5.19-10.24c-7.29-.14-14.44 0-21.74 0-1.82 3.37-3.65 6.87-5.61 10.24-2.94.14-5.75.14-8.55 0m17.67-16.55h14.86c-2.52-4.63-4.63-9.26-7.29-13.74-2.66 4.62-5.05 9.11-7.57 13.74zm102.93-24.82c4.21-2.1 8.98-2.24 13.46-1.4 3.93.84 7.01 3.65 9.4 6.59-2.1 1.12-4.21 2.1-6.31 3.23-2.8-4.35-9.4-5.75-13.46-2.38-2.1 1.54-1.96 5.33.42 6.45 5.47 2.94 12.06 3.65 16.83 7.71 4.91 4.21 4.77 12.48.14 16.83-4.91 4.91-12.62 6.03-19.07 4.21-5.47-1.4-9.54-6.31-10.24-11.78 2.66-.56 5.33-.98 7.99-1.4.28 2.52 1.26 5.47 3.79 6.73 3.79 2.1 9.4 1.54 12.06-2.24 1.82-2.52 1.26-6.45-1.26-8.27-5.33-3.51-12.34-3.79-17.25-8.27-2.52-2.1-3.51-5.75-2.66-8.98.69-3.25 3.36-5.63 6.16-7.03zm-68.29-.98c2.94-.42 6.03-.28 8.98-.28 3.23 4.77 6.45 9.54 9.54 14.3 3.37-4.77 6.59-9.54 9.96-14.16 3.09-.14 6.17-.14 9.26 0-4.91 6.73-9.82 13.46-14.58 20.33 4.91 7.57 10.38 14.72 15.29 22.44h-8.83c-3.79-5.33-7.43-10.8-11.08-16.13-3.79 5.33-7.71 10.66-11.5 16.13h-8.83c5.19-7.57 10.52-14.86 15.99-22.3-4.81-6.87-9.57-13.6-14.2-20.33zm45.01-.15a73.4 73.4 0 0 1 7.85 0v42.63h-7.99c.14-14.3 0-28.46.14-42.63zm76.99-.14c6.73.28 14.02-.98 20.33 2.38 6.03 3.23 7.43 12.9 1.82 17.25 3.51 1.4 7.01 4.07 7.85 7.85 1.54 4.77-1.12 9.96-5.33 12.48-7.57 4.21-16.41 2.24-24.68 2.8-.13-14.15.01-28.45.01-42.76m7.86 6.18v12.2c2.94-.14 6.17 0 8.69-1.82 2.52-2.24 2.52-7.01-.42-8.98-2.38-1.55-5.47-1.4-8.27-1.4m0 17.8v12.48c3.93-.14 8.13.56 11.78-1.4 3.23-1.54 3.79-6.73.84-8.83-3.51-2.95-8.28-2.25-12.62-2.25zm130.98-23.98h7.85v16.83c6.45-5.75 13.04-11.22 19.63-16.97h10.8c-7.71 6.31-15.43 12.76-23.14 19.35 7.57 7.99 15.29 15.57 23 23.28-3.51 0-7.15.28-10.66-.14-6.17-6.17-12.2-12.48-18.23-18.79l-1.26 1.68c-.14 5.75 0 11.5-.14 17.25h-7.99c0-14.02 0-28.18.14-42.49zm-402.76 42.5c14.72 0 29.45-.14 44.17.14 8.83 15.29 17.81 30.43 26.5 45.86-14.72.14-29.45 0-44.17 0-8.69-15.43-17.81-30.58-26.5-46z" fill="#ae285d"/></svg>
+    </div>
+  </div>
+</section> -->

@@ -1,0 +1,128 @@
+.sixth-container{
+
+flex-direction: column !important;
+    margin-top: 20rem;
+
+}
+
+.vagan-section{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.veg-text div{
+    width: 60%;
+}
+
+.veg-text h2{
+    font-size: 10rem;
+    line-height: .9; 
+    color: #52aa09;
+
+}
+
+
+.subheading-veg {
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(40, 40, 40);
+    line-height: 1;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   }
+
+.veg-text div p{
+    font-size: 1.5rem;
+    color: rgb(119, 119, 119);
+}
+
+.veg-text button{
+    margin-top: 3rem;
+    border-radius: 2rem;
+    padding: 2rem 6rem 2rem 6rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: #52aa09;
+    color: aliceblue;
+    box-shadow: 0 0 10px rgba(117, 116, 116, 0.509);
+    margin-left: 10rem;
+    transition:  0.4s  ease;
+    cursor: pointer;
+    position: absolute;
+    
+}
+
+.veg-text div{
+    position: relative;
+}
+
+.veg-text button:hover{
+transform: translate(0px ,-5px);
+
+}
+
+.vegan-introduction{
+    width: 90%;
+    padding: 10rem 10rem 10rem 10rem ;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+background-color: #51aa0979;
+
+}
+
+
+.vegan-introduction h2{
+    font-size: 3rem;
+    color: rgb(33, 33, 33);
+
+}
+
+.vegan-introduction p{
+    font-size: 2rem;
+    color: rgb(100, 100, 100);
+}
+
+
+/* ----------cards-------------- */
+
+
+
+
+
+.vagan-cards{
+    display: grid;
+    margin: 2rem 8rem 20rem 8rem;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.card-vagan{
+    width: 50%;
+    justify-self: center;
+    margin-bottom: 2.6rem;
+}
+
+
+
+.card-vagan div {}
+
+
+.card-vagan div h3{
+font-size: 2.2rem;
+color: rgb(55, 55, 55);
+
+
+}
+
+.card-vagan div p{
+    font-size: 1.5rem;
+}
+
+.icon{
+
+    color: #52aa09;
+    font-size: 3rem;
+}
